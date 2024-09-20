@@ -1,9 +1,11 @@
-const signInBtnLink = document.querySelector('.signInBtn-link');
-const signUpBtnLink = document.querySelector('.signUpBtn-link');
-const wrapper = document.querySelector('.wrapper');
-signUpBtnLink.addEventListener('click', () => {
-    wrapper.classList.toggle('active');
+const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
 });
-signInBtnLink.addEventListener('click', () => {
-    wrapper.classList.toggle('active');
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
 });
